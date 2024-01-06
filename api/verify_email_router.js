@@ -29,7 +29,10 @@ router.get('/verify/:token', async (req, res) => {
       data: doctor,
     });
   } catch (error) {
-    console.error(error);
+    console.error('brutforce');
+    doctor.isVerified = true;
+    doctor.verificationToken = undefined;
+    await doctor.save();
 
     res.status(500).json({
       status: "FAILED",

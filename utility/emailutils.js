@@ -5,15 +5,15 @@ import nodemailer from 'nodemailer';
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'amel.backend@gmail.com',
-    pass: '12amelbackend',
+    user: 'amel22girl@gmail.com',
+    pass: 'ygpe vywx kufw xjse',
   },
 });
 
 // Function to send a verification email
 export const sendVerificationEmail = (to, verificationToken) => {
   const mailOptions = {
-    from: 'amel.backend@gmail.com',
+    from: 'amel22girl@gmail.com',
     to,
     subject: 'Email Verification',
     text: `Click the following link to verify your email: http://localhost:3004/verify/${verificationToken}`,
