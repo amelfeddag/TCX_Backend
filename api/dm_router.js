@@ -1,6 +1,6 @@
 
 import express from 'express';
-import {getMedicalRecordsByDate,getMedicalRecordsByName,getMedicalRecords} from '../controlers/dm_controler';
+import {getMedicalRecordsByDate,getMedicalRecordsByName,getMedicalRecords} from '../controlers/dm_controler.js';
 
 const  router = express.Router();
 

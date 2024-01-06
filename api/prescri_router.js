@@ -1,5 +1,5 @@
 import express from 'express';
-import { getHistory, deleteHistoryEntry, deleteEntireHistory } from '../controlers/prescri_controler.js';
+import {addPrescriptionToMedicalRecord,getPrescriptionsFromMedicalRecord}  from '../controlers/prescri_controler.js';
 
 const router=express.Router();
 

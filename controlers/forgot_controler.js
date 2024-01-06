@@ -1,6 +1,6 @@
 // user_controller.js
 
-import User from '../models/user_model.js';
+import User from '../models/doctor.model.js';
 import nodemailer from 'nodemailer';
 
 const sendPasswordResetEmail = async (req, res) => {
